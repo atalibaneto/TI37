@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand img {
+    height: 50px;
+}
+#barranav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
