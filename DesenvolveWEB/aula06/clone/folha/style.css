@@ -61,7 +61,7 @@ iframe {
     top: 0;
     left: 0;
     background-image: linear-gradient(to right, #03588C, rgba(3,88,140,0.2));
-    z-index: 9999;
+    z-index: 1;
 }
 .carousel-indicators {
     bottom: 150px;
