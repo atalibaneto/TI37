@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="folha/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="container">
@@ -14,7 +16,7 @@
             <nav class="navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html"><img src="imagens/senac.png" alt="Logotipo Senac com o avião de papel estilizado"></a>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex ms-auto" role="search">
                         <div style="position: relative;">
                             <i class="bi bi-search" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%);"></i> <input class="form-control me-2" type="search" placeholder="Pesquisar" style="padding-left: 35px;" aria-label="Search">
                         </div>
@@ -29,20 +31,87 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul>
-                        <li><a href="">Cursos</a></li>
-                        <li><a href="">Unidades</a></li>
-                        <li><a href="">Bolsas de estudo</a></li>
-                        <li><a href="">Descontos</a></li>
-                        <li><a href="">Eventos</a></li>
-                        <li><a href="">Para empresas</a></li>
-                        <li><a href="">O Senac</a></li>
-                        <li><a href="">Serviços</a></li>
+                    <ul class="navbar-nav mx-auto gap-4">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Unidades</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Bolsas de estudo</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Descontos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Para empresas</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">O Senac</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
                     </ul>
                 </div>
                 </div>
             </nav>
         </section>
     </div>
+    <section id="video_background">
+        <div class="video-background ratio ratio-16x9">
+        <iframe 
+        width="100%"
+        height="500" 
+        src="https://www.youtube.com/embed/EQi44eDP3zo?autoplay=1&mute=1&loop=1&controls=0&si=nvaKmzUJPcCCFUjU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        </div>
+    </section>
+    <section id="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated fadeInDown" style="animation-delay: 1s">Tecnologia da Informação</h5>
+                    <p class="animated fadeInUp" style="animation-delay: 2s">Cursos de TI podem ser livres, com foco rápido em habilidades específicas, ou técnicos, mais aprofundados e práticos, preparando para o mercado em áreas como redes, suporte e desenvolvimento de sistemas</p>
+                    <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Saiba Mais</a></p>
+                </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated fadeInDown" style="animation-delay: 1s">Tecnologia da Informação</h5>
+                    <p class="animated fadeInUp" style="animation-delay: 2s">Cursos de TI podem ser livres, com foco rápido em habilidades específicas, ou técnicos, mais aprofundados e práticos, preparando para o mercado em áreas como redes, suporte e desenvolvimento de sistemas</p>
+                    <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Saiba Mais</a></p>
+                </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated fadeInDown" style="animation-delay: 1s">Tecnologia da Informação</h5>
+                    <p class="animated fadeInUp" style="animation-delay: 2s">Cursos de TI podem ser livres, com foco rápido em habilidades específicas, ou técnicos, mais aprofundados e práticos, preparando para o mercado em áreas como redes, suporte e desenvolvimento de sistemas</p>
+                    <p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Saiba Mais</a></p>
+                </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 </html>
