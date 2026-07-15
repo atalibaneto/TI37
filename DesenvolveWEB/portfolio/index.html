@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7c4f254726.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- ---------- Cabeçalho do Site ---------- -->
+     <section id="header">
+        <div class="container">
+            <nav>
+                <img src="imagens/logo.png" class="logo" alt="Logotipo">
+                <ul id="menulateral">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="fecharmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
+            </nav>
+            <div class="texto-cabecalho">
+                <p>UI/UX Designer</p>
+                <h1>Olá, meu nome é <span>John Doe</span></h1>
+                <p>Posso te ajudar com <span class="habilidades"></span></p>
+            </div>
+        </div>
+     </section>
+     <!-- ---------- Sobre ---------- -->
+      <section id="sobre">
+            <div class="container">
+                <div class="linha">
+                    <div class="sobre-col-1">
+                        <img src="imagens/sobre.png" alt="foto de rosto com fundo verde">
+                    </div>
+                    <div class="sobre-col-2">
+                        <div class="subtitulo">Sobre</div>
+                        <p>Olá! Meu nome é John Doe e sou um desenvolvedor web apaixonado por criar soluções inovadoras e eficientes. Com experiênci em diversas tecnologias e um olhar atento ao detalhes, meu objetivo é transformar ideias em realidade através de código limpo e funcional. Vamos trabalhar juntos para levar seu projeto ao próximo nível.</p>
+                        <div class="aba-titulos">
+                            <p class="aba-links link-ativo" onclick="abriraba('skills')">Skills</p>
+                            <p class="aba-links" onclick="abriraba('experiencia')">Experiência</p>
+                            <p class="aba-links" onclick="abriraba('formacao')">Formação</p>
+                        </div>
+                        <div class="aba-conteudos aba-ativa" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Desenvolvimento de Interface WEB/APP</li>
+                                <li><span>Web Development</span><br>Desenvolvimento de Sites</li>
+                                <li><span>APP Development</span><br>Desenvolvimento de Apps para Android e iOS</li>
+                            </ul>
+                        </div>
+                        <div class="aba-conteudos" id="experiencia">
+                            <ul>
+                                <li><span>2021 - Até hoje</span><br>Professor Honorário no MIT</li>
+                                <li><span>2011 - 2021</span><br>CIO at IBM</li>
+                                <li><span>2004 - 2011</span><br>Desenvolvedor na Google Inc.</li>
+                            </ul>
+                        </div>
+                        <div class="aba-conteudos" id="formacao">
+                            <ul>
+                                <li><span>2010</span><br>MBA no MIT</li>
+                                <li><span>2009</span><br>MBA Harvard</li>
+                                <li><span>2003</span><br>Serviço Nacional de Aprendizagem Comercial (Senac) - Botucatu / SP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <!-- ---------- Serviços ---------- -->
+      <section id="servicos">
+        <div class="container">
+            <h1 class="subtitulo">Serviços</h1>
+            <div class="lista-servicos">
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>UX/UI</h2>
+                    <p>Oferecemos serviços de design UX/UI para criar interfaces intuitivas e atraentes que proporcionam
+                        uma experiência de usuário excepcional. Nosso processo envolve pesquisa de usuário, criação de
+                        wireframes e protótipos, e testes de usabilidade para garantir que o design atenda às
+                        necessidades dos usuários e aos objetivos do seu negócio.</p>
+                    <a href="#">saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Desenvolvemos sites personalizados e funcionais, utilizando as tecnologias mais recentes para
+                        garantir desempenho, segurança e escalabilidade. Seja um site institucional, um blog ou uma
+                        plataforma de e-commerce, nossa equipe está pronta para transformar suas ideias em realidade.</p>
+                    <a href="#">saiba mais</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Desenvolvimento de Interfaces Web/APP</h2>
+                    <p>Especializados em desenvolvimento de interfaces para web e aplicativos, criamos soluções que são
+                        visualmente atraentes e fáceis de usar. Utilizamos frameworks modernos e práticas recomendadas
+                        para garantir que suas interfaces sejam rápidas, responsivas e acessíveis em diversos
+                        dispositivos.</p>
+                    <a href="#">saiba mais</a>
+                </div>
+            </div>
+        </div>
+      </section>
+     <!-- ---------- Portfólio ---------- -->
+      <section id="portfolio">
+        <div class="container">
+            <h1 class="subtitulo">Meus trabalhos</h1>
+            <div class="lista-trabalhos">
+                <div class="trabalhos">
+                    <img src="imagens/profissao1.png" alt="Criação de imagens">
+                    <div class="layer">
+                        <h3>Criação de Imagens</h3>
+                        <p>Designer focado na edição e criação de imagens digitais, dominando as ferramentas do Photoshop.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="trabalhos">
+                    <img src="imagens/profissao2.png" alt="Criação de Loja Virtual">
+                    <div class="layer">
+                        <h3>Loja Virtual</h3>
+                        <p>Especialista em criação de lojas virtuais completas, estruturando e-commerces para as vendas.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="trabalhos">
+                    <img src="imagens/profissao3.png" alt="Criação de APP">
+                    <div class="layer">
+                        <h3>Criação de Apps</h3>
+                        <p>Desenvolvedor focado na criação de aplicativos mobile, criando soluções nativas e eficientes.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="botao">Saiba mais</a>
+        </div>
+      </section>
+      <!-- ---------- Contato ---------- -->
+       <section id="contato">
+            <div class="container">
+                <div class="linha">
+                    <div class="contato_esquerda">
+                        <h1 class="subtitulo">Contato</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> contato@tfl.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 59 9632-7418</p>
+                        <div class="social">
+                            <a href="https://www.discord.com"><i class="fa-brands fa-discord"></i></a>
+                            <a href="https://www.x.com"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contato_direita">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Nome" id="nome" placeholder="Digite seu nome" required>
+                            <input type="email" name="Email" id="email" placeholder="Digite seu e-mail" required>
+                            <textarea name="Mensagem" rows="6" placeholder="Digite sua mensagem" required></textarea>
+                            <button type="submit" class="botao botao2">Enviar</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+
+      <!-- ---------- Rodapé ---------- -->
+      <div class="copyright"><!-- Símbolo copyright Alt + 0169 -->
+        <p>Copyright © 2026. Orgulhosamente feito com <i class="fa-solid fa-heart"></i> na Terra do Saci.</p>
+      </div>
+
+
+     <script>
+        var abaLinks = document.getElementsByClassName("aba-links");
+        var abaConteudos = document.getElementsByClassName("aba-conteudos");
+        function abriraba(abaNome) {
+            for (abaLink of abaLinks) {
+                abaLink.classList.remove("link-ativo"); /* Remove a classe "link-ativo" de todos os links */
+            }
+            for (abaConteudo of abaConteudos) {
+                abaConteudo.classList.remove("aba-ativa"); /* Remove a classe "aba-ativa" de todos os conteudos */
+            }
+            event.currentTarget.classList.add("link-ativo"); /* Adiciona a classe "link ativo" ao clicar no link */
+            document.getElementById(abaNome).classList.add("aba-ativa"); /* Adiciona a classe "aba-ativa" ao conteúdo correspondente (usando o ID passado como parâmetro */
+        }
+     </script>
+     <script>
+        var menu = document.getElementById("menulateral");
+        function abrirmenu() {
+            menu.style.right = "0";
+        }
+        function fecharmenu() {
+            menu.style.right = "-200px";
+        }
+     </script>
+     <script>
+        var typed = new Typed('.habilidades', {
+            strings: ['Desenvolvimento de Interface WEB/APP', 'Web Development', 'Desenvolvimento de APPs para Android e iOS'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 500,
+            loop: true,
+
+});
+     </script>
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz0oCG7HrbFC7PKIdhGjcezd5kKAoQ_M2YxxA4QzqUBAJbcUQgtAEw3aHlbzIRHd1Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Mensagem enviada com sucesso!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>

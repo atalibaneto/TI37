@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --bg-cinza-escuro: #080808;
+    --branco: #FFFFFF;
+    --magenta: #FF004F;
+    --bg-cinza: #262626;
+    --bg-cinza-claro:#ABABAB;
+    --verde: #61B752;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-cinza-escuro);
+    color: var(--branco);
+}
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/john_doe.png);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 10px 10%;
+}
+.logo {
+    width: 140px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--magenta);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.texto-cabecalho {
+    margin-top: 20%;
+    font-size: 30px;
+}
+.texto-cabecalho h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.texto-cabecalho h1 span {
+    color: var(--magenta);
+}
+.texto-cabecalho .habilidades {
+    margin-top: 10px;
+    color: var(--magenta);
+}
+/* ********** Sobre ********** */
+#sobre {
+    padding: 80px 0;
+}
+.linha {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sobre-col-1 {
+    flex-basis: 35%;
+}
+.sobre-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+.sobre-col-2 {
+    flex-basis: 60%;
+}
+.sobre-col-2 p {
+    font-size: 18px;
+}
+.subtitulo {
+    font-size: 60px;
+    font-weight: 600;
+}
+.aba-titulos {
+    display: flex;
+    margin: 20px 0 40px;
+}
+.aba-links {
+    margin: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.aba-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--magenta);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.aba-links.link-ativo::after {
+    width: 50%;
+}
+.aba-conteudos ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.aba-conteudos ul li span {
+    color: var(--magenta);
+    font-size: 18px;
+}
+.aba-conteudos {
+    display: none;
+}
+.aba-conteudos.aba-ativa {
+    display: block;
+}
+/* ********** Serviços ********** */
+#servicos {
+    padding: 30px 0;
+}
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.lista-servicos div {
+    background-color: var(--bg-cinza);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.lista-servicos div:hover {
+    background-color: var(--magenta);
+    transform: translateY(-10px);
+}
+.lista-servicos div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.lista-servicos div h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.lista-servicos div a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* ********** Portfólio ********** */
+#portfolio {
+    padding: 50px 0;
+}
+.lista-trabalhos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+.trabalhos {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* o conteúdo que ultrapassar os limites do elemento serão ocultados */
+}
+.trabalhos img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.trabalhos:hover img {
+    transform: scale(1.1);
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--magenta));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3 {
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: var(--magenta);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: var(--branco);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.trabalhos:hover .layer {
+    height: 100%;
+}
+.botao {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--magenta);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--branco);
+    transition: background-color 0.5s;
+}
+.botao:hover {
+    background-color: var(--magenta);
+}
+/* ********** Contato ********** */
+.contato_esquerda {
+    flex-basis: 35%;
+}
+.contato_direita {
+    flex-basis: 65% ;
+}
+.contato_esquerda p {
+    margin-top: 30px;
+}
+.contato_esquerda p i {
+    font-size: 25px;
+    margin-right: 15px;
+    color: var(--magenta);
+}
+.social {
+    margin-top: 30px;
+}
+.social a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:var(--bg-cinza-claro);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social a:hover {
+    color: var(--magenta);
+    transform: translateY(-5px)
+}
+.contato_direita form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border:0;
+    outline: none;
+    background-color: var(--bg-cinza);
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--branco);
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none; /* bloquear o tamanho do textarea */
+}
+form .botao2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.botao.botao2 {
+    display: inline-block;
+    background-color: var(--magenta);
+}
+#msg {
+    color: var(--verde);
+    margin-top: -40px;
+    display: block;
+}
+/* ********** Rodapé ********** */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--bg-cinza);
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i {
+    color: var(--magenta);
+}
+/* ********** Responsividade ********** */
+nav .fa-solid {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(../imagens/cel_john_doe.png);
+    }
+    .texto-cabecalho {
+        margin-top: 30%;
+        font-size: 16px;
+    }
+    .texto-cabecalho h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background-color: var(--magenta);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitulo {
+        font-size: 40px;
+    }
+    /* SOBRE */
+    .sobre-col-1, .sobre-col-2 {
+        flex-basis: 100%;
+    }
+    .sobre-col-1 {
+        margin-bottom: 30px;
+    }
+    .sobre-col-2 {
+        font-size: 14px;
+    }
+    .aba-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    /* Contato */
+    .contato_direita, .contato_esquerda {
+        flex-basis: 100%;
+    }
+    /* Rodape */
+    .copyright {
+        font-size: 14px;
+    }
+    nav i .fa-solid, .fa-bars {
+        cursor: pointer;
+    }
+}

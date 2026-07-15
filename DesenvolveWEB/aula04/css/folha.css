@@ -1,0 +1,30 @@
+body {
+    background-color: #FBE4B0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+}
+li {
+    padding: 10px 10px 10px 30px;
+    margin: 10px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+li::before {
+    content: "";
+    position: absolute;
+    left: 65px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../imagens/asterisco.svg');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    padding: 60px;
+    background-color: #1ABC9C;
+    text-align: center;
+    color: #FFF;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #0E6856;
+    padding: 10px;
+}
+h2 {
+    padding-bottom: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 14px 20px;
+    display: flex;
+    background-color: #333;
+}
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+}
+nav ul li a:hover {
+    color: #000;
+    background-color: #DDD;
+}
+section {
+    padding: 20px;
+}
+section article p {
+    padding: 5px 0;
+}
+footer {
+    padding: 30px;
+    text-align: center;
+}
+.lista {
+    padding: 0 0 0 30px;
+}
+li::marker {
+    font-weight: bold;
+}
+form {
+    padding: 15px;
+    border: 1px solid #0E6856;
+}
+label {
+    color: #0E6856;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #CCC;
+}
+input[type="submit"] {
+    background-color: coral;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.produto {
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.produto h2 {
+    color: #0E6856;
+}
+.produto p {
+    margin: 5px 0;
+}
+.preco {
+    color: coral;
+    font-weight: bold;
+}

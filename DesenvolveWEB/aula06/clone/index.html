@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac SP - [CLONE]</title>
+    <link rel="stylesheet" href="folha/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <section id="barranav"><!-- Seção Barra Navegação -->
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="imagens/senac.png" alt="Logotipo Senac com o avião de papel estilizado"></a>
+                    <form class="d-flex ms-auto" role="search">
+                        <div style="position: relative;">
+                            <i class="bi bi-search" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%);"></i> <input class="form-control me-2" type="search" placeholder="Pesquisar" style="padding-left: 35px;" aria-label="Search">
+                        </div>
+                        <button class="btn btn-primary text-nowrap" type="submit"><i class="bi bi-person-fill"></i> Meu Senac</button>
+                    </form>
+                        <i class="bi bi-backpack-fill  text-primary fs-1"></i>
+                </div>  
+            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-4">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Unidades</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Bolsas de estudo</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Descontos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Eventos</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Para empresas</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">O Senac</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </section><!-- FIM Seção Barra Navegação -->
+        <section id="video_fundo"><!-- Seção Vídeo -->
+            <div class="video-container ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EQi44eDP3zo?autoplay=1&mute=1&loop=1&controls=0&playlist=EQi44eDP3zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="carrossel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg aria-label="Placeholder: First slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="400" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0)"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg aria-label="Placeholder: Second slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="400" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0)"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="400" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="rgba(0, 0, 0, 0)"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+
+
+
+        </section><!-- FIM Seção Vídeo -->
+
+
+
+
+
+
+
+
+
+    </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>

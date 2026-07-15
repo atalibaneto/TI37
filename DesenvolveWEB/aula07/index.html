@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Formulários</title>
+</head>
+<body>
+    <h1>Formulários HTML</h1>
+    <form>
+        <label for="lnome">Nome: </label><br>
+        <input type="text" name="nome" id="nome" value="Digite seu nome"><br>
+        <label for="lsobrenome">Sobrenome:</label><br>
+        <input type="text" name="sobrenome" id="sobrenome" value="Digite seu sobrenome"><br>
+        <p>Escolha sua linguagem de programação favorita</p>
+        <input type="radio" id="html" name="ling_fav" value="HTML">
+        <label for="HTML">HTML</label><br>
+        <input type="radio" id="python" name="ling_fav" value="python">
+        <label for="Python">Python</label><br>
+        <input type="radio" id="Javascript" name="ling_fav" value="Javascript">
+        <label for="Javascript">Javascript</label>
+        <p>Escolha seus navegadores favoritos</p>
+        <input type="checkbox" id="navegadores" name="navegadores" value="Firefox">
+        <label for="navegadores">Mozilla Firefox</label><br>
+        <input type="checkbox" id="navegadores" name="navegadores" value="Firefox">
+        <label for="navegadores">Edge</label><br>
+        <input type="checkbox" id="navegadores" name="navegadores" value="Edge">
+        <label for="navegadores">Chrome</label><br>
+        <p>
+            <label for="lest">Estado</label>
+            <select name="estado" id="lest">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Enviar"> 
+        <input type="reset" value="Limpar"></p>
+        
+    </form>
+</body>
+</html>
