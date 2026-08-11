@@ -1,3 +1,4 @@
+    <!-- cotação do dolar -> https://dadosabertos.bcb.gov.br/ -> Dólar comercial (venda e compra) - cotações diárias -> Cotação do Dólar por períodoJSON  -->   
     <?php 
     $inicio = date("m-d-Y", strtotime("-7 days"));
 $hoje = date("m-d-Y");
