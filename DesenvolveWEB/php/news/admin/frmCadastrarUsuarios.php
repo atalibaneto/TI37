@@ -83,7 +83,7 @@
                     <p><a href="frmCadastrarUsuarios.php" class="btn btn-secondary">Cadastrar usuários</a> <a href="listarUsuarios.php" class="btn btn-secondary">Listar usuários</a> <a href="frmCadastrarNoticias.php" class="btn btn-secondary">Cadastrar Notícias</a> <a href="listarNotícias.php" class="btn btn-secondary">Listar Notícias</a></p>
                     <h2>Cadastro de Usuários</h2>
                     <div class="col">
-                        <form action="inserirUsarios.php" method="post">
+                        <form action="inserirUsuarios.php" method="post">
                             <label for="nomeCompleto" class="form-label">Nome Completo</label>
                             <input type="text" name="nome" id="nome" class="form-control"><br>
                             <label for="E-mail" class="form-label">E-mail</label>
