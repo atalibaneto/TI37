@@ -88,7 +88,9 @@
                     <!-- Ver Usuário -->
                     <h2>Ver Usuários</h2>
                         <?php 
-                            
+                            if(isset($_GET['idUsuario'])) {
+                                
+                            }
                         ?>
 
 
