@@ -83,58 +83,55 @@
                     <h2>Painel Administrativo</h2>
                     <h3>Olá, <?php echo $_SESSION['login']; ?></h3> <a href="logout.php" class="btn btn-outline-secondary">Sair</a><br>
                 </div>
-                <div class="col-md-9 border-start border-1 text-center">
+                <div class="col-md-9 border-start border-1">
                     <p><a href="frmCadastrarUsuarios.php" class="btn btn-secondary">Cadastrar usuários</a> <a href="listarUsuarios.php" class="btn btn-secondary">Listar usuários</a> <a href="frmCadastrarNoticias.php" class="btn btn-secondary">Cadastrar notícias</a> <a href="listarNoticias.php" class="btn btn-secondary">Listar notícias</a></p>
-                    <!-- Ver Usuário -->
-                    <h2>Ver Usuários</h2>
+                    <!-- Editar Usuário -->
+                    <h2>Editar Usuário</h2>
                         <?php 
-                            if(isset($_GET['idUsuario'])) {
+                            if (isset($_GET['idUsuario'])) {
                                 $usuario_id = mysqli_real_escape_string($conexao, $_GET['idUsuario']);
                                 $sql = "SELECT * FROM usuarios WHERE idUsuario = '$usuario_id'";
                                 $query = mysqli_query($conexao, $sql);
-                                    if (mysqli_num_rows($query) > 0) {
-                                        $usuario = mysqli_fetch_array($query);
+
+                                if(mysqli_num_rows($query) > 0) {
+                                    $usuario = mysqli_fetch_array($query);
+                                    //var_dump($usuario);
                         ?>
-                        <div class="row g-3">
+                        <form action="frmEditarUsuario.php" method="post">
+                            <input type="hidden" name="idUsuario" value="<?= $usuario['idUsuario'] ?>">
+                            <div class="row g-3">
                             <div class="col-sm">
                                 <label for="nomeUsuario" class="form-label">Nome do Usuário</label>
-                                <p class="form-control">
-                                    <?= $usuario['nomeUsuario'] ?>
-                                </p>
+                                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['nomeUsuario'] ?>">
                             </div>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
                                 <label for="nomeUsuario" class="form-label">E-mail</label>
-                                <p class="form-control">
-                                    <?= $usuario['emailUsuario'] ?>
-                                </p>
+                                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['emailUsuario'] ?>">
                             </div>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
                                 <label for="nomeUsuario" class="form-label">Login</label>
-                                <p class="form-control">
-                                    <?= $usuario['loginUsuario'] ?>
-                                </p>
+                                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['loginUsuario'] ?>">
                             </div>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
-                                <label for="nomeUsuario" class="form-label">Senha</label>
-                                <p class="form-control">
-                                    <?= "...".substr($usuario['senhaUsuario'], 10, 8)."..." ?>
-                                </p>
+                                <input type="hidden" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['senhaUsuario'] ?>">
                             </div>
                         </div>
-                        <?php 
-                                } else {
-                                    echo "<h5>Usuário não encontrado</h5>";
-                                }
-                            }
-                        ?>
+                        <button type="submit" name="editarUsuario" class="btn btn-success mt-3">Editar</button>
+                        </form>
                 </div>
             </div>
+                <?php 
+                } else {
+                    echo "<h5>Usuário não encontrado</h5>";
+                    }
+                }
+                ?>
             <hr>
         </div>
     </section>
