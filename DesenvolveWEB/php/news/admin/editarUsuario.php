@@ -107,19 +107,19 @@
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
-                                <label for="nomeUsuario" class="form-label">E-mail</label>
-                                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['emailUsuario'] ?>">
+                                <label for="emailUsuario" class="form-label">E-mail</label>
+                                <input type="text" class="form-control" id="emailUsuario" name="emailUsuario" value="<?= $usuario['emailUsuario'] ?>">
                             </div>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
-                                <label for="nomeUsuario" class="form-label">Login</label>
-                                <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['loginUsuario'] ?>">
+                                <label for="loginUsuario" class="form-label">Login</label>
+                                <input type="text" class="form-control" id="loginUsuario" name="loginUsuario" value="<?= $usuario['loginUsuario'] ?>">
                             </div>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm">
-                                <input type="hidden" class="form-control" id="nomeUsuario" name="nomeUsuario" value="<?= $usuario['senhaUsuario'] ?>">
+                                <input type="hidden" class="form-control" id="senhaUsuarioo" name="senhaUsuario" value="<?= $usuario['senhaUsuario'] ?>">
                             </div>
                         </div>
                         <button type="submit" name="editarUsuario" class="btn btn-success mt-3">Editar</button>

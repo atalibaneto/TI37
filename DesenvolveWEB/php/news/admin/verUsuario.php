@@ -83,7 +83,7 @@
                     <h2>Painel Administrativo</h2>
                     <h3>Olá, <?php echo $_SESSION['login']; ?></h3> <a href="logout.php" class="btn btn-outline-secondary">Sair</a><br>
                 </div>
-                <div class="col-md-9 border-start border-1 text-center">
+                <div class="col-md-9 border-start border-1">
                     <p><a href="frmCadastrarUsuarios.php" class="btn btn-secondary">Cadastrar usuários</a> <a href="listarUsuarios.php" class="btn btn-secondary">Listar usuários</a> <a href="frmCadastrarNoticias.php" class="btn btn-secondary">Cadastrar notícias</a> <a href="listarNoticias.php" class="btn btn-secondary">Listar notícias</a></p>
                     <!-- Ver Usuário -->
                     <h2>Ver Usuários</h2>
